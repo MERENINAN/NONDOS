@@ -1,2 +1,2 @@
 # NONDOS
-Non Dos
+NONDOS is a Open Source virtual dos.
