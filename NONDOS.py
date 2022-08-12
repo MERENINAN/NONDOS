@@ -74,7 +74,8 @@ Html""")
 
 if whatyouwant == "wincmd":
     commandwin = input("Command ---> ")
-    os.system("'",commandwin,"'")
+    os.system(commandwin)
+    time.sleep(9999)
 
 if whatyouwant == "noncmd":
     print("Welcome To Non Command Prompt (For All Commands Write Help.from.nondos)")
