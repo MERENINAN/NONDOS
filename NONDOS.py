@@ -15,12 +15,14 @@ print(banner)
 print("""
 noncmd - Command Prompt
 noncreater - Create Your File
+wincmd - Windows Command Prompt
 """)
 
 whatyouwant = input("What Do You Want ---> ")
 
 if whatyouwant == "noncreater":
     print("""Languages :
+Vbs
 Perl
 Ruby
 Python
@@ -30,6 +32,9 @@ C#
 Php
 Html""")
     language = input("Language ---> ")
+    if language == "Vbs":
+        filevbs = open("nondosvbsfile.vbs","w")
+        print("File Created (File Name: nondosvbsfile.vbs)")
     if language == "Perl":
         fileperl = open("nondosperlfile.pe","w")
         print("File Created (File Name: nondosperlfile.pe)")
@@ -67,6 +72,10 @@ Html""")
         whatyouwant = input("What Do You Want ---> ")
 
 
+if whatyouwant == "wincmd":
+    commandwin = input("Command ---> ")
+    os.system("'",commandwin,"'")
+
 if whatyouwant == "noncmd":
     print("Welcome To Non Command Prompt (For All Commands Write Help.from.nondos)")
     noncmd = input("Command ---> ")
@@ -88,5 +97,7 @@ if whatyouwant == "noncmd":
         noncmd = input("Command ---> ")
     if noncmd == "ping.select.website.from.nondos":
         pingselect = input("Website ---> ")
-        os.system("ping",pingselect)
+        os.system("ping ",pingselect)
+        time.sleep(0.5)
+        noncmd = input("Command ---> ")
     
