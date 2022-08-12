@@ -75,6 +75,7 @@ if whatyouwant == "noncmd":
         Commands : 
         ping.website::google.com.from.nondos
         ping.website::youtube.com.from.nondos
+        ping.select.website.from.nondos
         """)
         noncmd = input("Command ---> ")
     if noncmd == "ping.website::google.com.from.nondos":
@@ -85,3 +86,7 @@ if whatyouwant == "noncmd":
         os.system("ping youtube.com")
         time.sleep(0.5)
         noncmd = input("Command ---> ")
+    if noncmd == "ping.select.website.from.nondos":
+        pingselect = input("Website ---> ")
+        os.system("ping",pingselect)
+    
