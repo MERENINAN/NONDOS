@@ -15,7 +15,7 @@ print(banner)
 print("""
 noncmd - Command Prompt
 noncreater - Create Your File
-wincmd - Windows Command Prompt
+noncalc - Calculator
 """)
 
 whatyouwant = input("What Do You Want ---> ")
@@ -72,10 +72,28 @@ Html""")
         whatyouwant = input("What Do You Want ---> ")
 
 
-if whatyouwant == "wincmd":
-    commandwin = input("Command ---> ")
-    os.system(commandwin)
-    time.sleep(9999)
+if whatyouwant == "noncalc":
+    print("""Formulas :
++
+-
+/""")
+    formulas = input("Formula ---> ")
+    if formulas == "+":
+        number1plus = input("Number 1 ---> ")
+        number2plus = input("Number 2 ---> ")
+        print(number1plus + number2plus)
+        time.sleep(9999)
+    if formulas == "-":
+        number1eksi = input("Number 1 ---> ")
+        number2eksi = input("Number 2 ---> ")
+        print(number1eksi - number2eksi)
+        time.sleep(9999)
+    if formulas == "-":
+        number1bolu = input("Number 1 ---> ")
+        number2bolu = input("Number 2 ---> ")
+        print(number1bolu - number2bolu)
+        time.sleep(9999)
+
 
 if whatyouwant == "noncmd":
     print("Welcome To Non Command Prompt (For All Commands Write Help.from.nondos)")
