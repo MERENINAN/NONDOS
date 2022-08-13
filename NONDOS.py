@@ -16,10 +16,15 @@ print("""
 noncmd - Command Prompt
 noncreater - Create Your File
 noncalc - Calculator
-nondos2
+nondos2 - NON DOS 2
+nonencrypt - Encrypt Text
+nondecrypt - Decrypt Text
 """)
 
 whatyouwant = input("What Do You Want ---> ")
+
+if whatyouwant == "nonencrypt":
+    print("")
 
 if whatyouwant == "nondos2":
     print("""
