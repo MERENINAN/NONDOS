@@ -1,6 +1,6 @@
-
+msgbox("All the data you write is stored on NONDOS's servers.")
      set x = WScript.CreateObject("WScript.Shell")
-     mySecret = inputbox("Enter the Text to be Encrypted.")
+     mySecret = inputbox("Enter the Text to be Decrypted.")
   mySecret = StrReverse(mySecret)
      x.Run "%windir%\notepad"
      wscript.sleep 1000 

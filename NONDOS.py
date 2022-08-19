@@ -24,7 +24,9 @@ nondecrypt - Decrypt Text
 whatyouwant = input("What Do You Want ---> ")
 
 if whatyouwant == "nonencrypt":
-    print("")
+    print("If You Want To Open NonEncrypt Go To NONDOS Folder And Open NONENCRYPT.vbs")
+    time.sleep(9999)
+    
 
 if whatyouwant == "nondos2":
     print("""
